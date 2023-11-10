@@ -16,7 +16,9 @@ function renderData(data) {
             <div class="card">
                 <img src="${'https://image.tmdb.org/t/p/w300'+movie.poster_path}"/>
                 <p hidden>${movie.id}</p>
-                <h3>${movie.title}</h3>
+                <div class="title-container">
+                    <h3 class=titulo>${movie.title}</h3>
+                </div>
             </div>
         `;
         document.querySelector('#render').innerHTML = template;
