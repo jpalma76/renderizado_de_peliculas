@@ -14,8 +14,8 @@ function renderData(data) {
     fetchData.map((movie)=> {
         template += `
             <div class="card">
-                <img src="${'https://image.tmdb.org/t/p/w300'+movie.poster_path}"/>
                 <p hidden>${movie.id}</p>
+                <img src="${'https://image.tmdb.org/t/p/w300'+movie.poster_path}"/>
                 <div class="title-container">
                     <h3 class=titulo>${movie.title}</h3>
                 </div>
